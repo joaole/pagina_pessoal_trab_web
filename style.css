@@ -1,0 +1,431 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #036;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 51, 102, 0.8);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cecece;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Elemento surge levemente deslocado */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Lazy loading */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-loaded {
+    opacity: 1;
+}
+
+/* Seção Home */
+.bg-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #003366 0%, #1a1a80 100%);
+    background-attachment: fixed;
+    /* Parallax effect */
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.bg-home p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.bg-home .btn {
+    background-color: #0066ff;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.bg-home .btn:hover {
+    background-color: #fff;
+    color: #0066ff;
+    border-color: #0066ff;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0;
+}
+
+/* Seção Sobre Mim */
+.bg-about {
+    background: #fcfdff;
+    padding: 60px 0;
+    color: #333;
+}
+
+.bg-about .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bg-about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.bg-about img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão da seção Sobre Mim */
+
+.read-more-btn-about {
+    margin-top: 10px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #333;
+    /* Sem fundo para um visual mais leve */
+    color: white;
+    /* Cor azul clara */
+    border: 2px solid #333;
+    /* Borda fina com o mesmo tom de azul */
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: none;
+    /* Sem sombra inicial para manter o estilo leve */
+    width: 100%;
+    /* Largura total */
+    display: block;
+    /* Garante que o botão ocupe a linha completa */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+}
+
+.read-more-btn-about:hover {
+    background-color: white;
+    color: #333;
+    border-color: #333;
+    /* Texto branco no hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave no hover */
+    transform: translateY(-2px);
+    /* Pequena elevação no hover */
+}
+
+
+/* Seção Qualificações */
+.bg-qualifications {
+    background-color: #036;
+    padding: 60px 0;
+    color: white;
+}
+
+.bg-qualifications .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Update to make qualification cards the same height */
+.qualification-card {
+    background-color: #f8f9fa;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Ensure all cards take up 100% of the available height */
+}
+
+/* Ensure all cards in the same row have the same height */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.qualification-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.qualification-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.qualification-card li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.qualification-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced hover effect */
+}
+
+/* Botão dos cards de qualificação */
+.qualification-card .btn {
+    border: 2px solid #fff;
+    background-color: #1a1a80;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.qualification-card .btn:hover {
+    background-color: #fff;
+    color: #1a1a80;
+    border-color: #1a1a80;
+}
+
+/* Seção Contato */
+.bg-contact {
+    background-color: #fcfdff;
+    padding: 60px 0;
+}
+
+.bg-contact .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    /* Hover enhancement */
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #1a1a80;
+}
+
+.contact-icon {
+    font-size: 3rem;
+    color: #1a1a80;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Seção Trajetória */
+.bg-trajetoria {
+    background-color: white;
+    margin-top: 5%;
+}
+
+.bg-qualifications_2 {
+    background-color: #036;
+}
+
+.bg-qualifications_2 h2 {
+    color: white;
+}
+
+.bg-qualifications_2 h2 {
+    color: white;
+}
+
+.qualification-card_2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualification-card_2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.qualification-card_2 h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    /* Reduzi de 15px para 10px */
+    color: #333;
+}
+
+.qualification-card_2 p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    /* Reduzi o espaçamento entre linhas de 1.8 para 1.6 */
+    margin-bottom: 15px;
+    /* Reduzi de 15px para 10px */
+}
+
+.read-more-btn {
+    margin-top: 10px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    /* Sem fundo para um visual mais leve */
+    color: #1a1a80;
+    /* Cor azul clara */
+    border: 2px solid #1a1a80;
+    /* Borda fina com o mesmo tom de azul */
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: none;
+    /* Sem sombra inicial para manter o estilo leve */
+    width: 100%;
+    /* Largura total */
+    display: block;
+    /* Garante que o botão ocupe a linha completa */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(135deg, #1a1a80, #4a4ac7);
+    color: #fff;
+    /* Texto branco no hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra suave no hover */
+    transform: translateY(-2px);
+    /* Pequena elevação no hover */
+}
+
+/* Footer */
+.bg-footer {
+    background-color: #003366;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.bg-footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.bg-footer .social-links a {
+    color: #fff;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+    /* Footer icon hover */
+}
+
+.bg-footer .social-links a:hover {
+    transform: scale(1.2);
+    /* Icon hover scaling */
+    color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bg-footer .social-links i {
+        margin: 10px 0;
+    }
+
+    .bg-home .text-md-start {
+        text-align: center;
+    }
+
+    .qualification-card,
+    .contact-card {
+        margin-bottom: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .read-more-btn-about {
+        margin-bottom: 5%;
+    }
+}

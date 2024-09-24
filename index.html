@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jleonardofr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qualifications">Qualificações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Meu Portifólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home" class="section bg-home d-flex align-items-center fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="globo.svg" alt="Globo" class="img-fluid d-none d-md-block lazy" loading="lazy">
+                </div>
+                <div
+                    class="col-md-6 d-flex flex-column justify-content-center text-white text-md-start text-center fade-in">
+                    <h1 class="display-4">Inovação e Criatividade Moldam o Futuro.</h1>
+                    <p>João Leonardo, TI Consultants</p>
+                    <a href="https://api.whatsapp.com/send?phone=5548996237831" class="btn btn-primary btn-lg"
+                        target="_blank" rel="noopener noreferrer">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="section bg-about fade-in">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 fade-in">
+                    <h2 class="title">Sobre Mim</h2>
+                    <p class="about-text">Sou um desenvolvedor dedicado com experiência em várias tecnologias.
+                        Apaixonado por resolver problemas, criar soluções impactantes e sempre em busca de novos
+                        desafios.</p>
+                    <span class="more-text" style="display: none;">
+                        <p>Nasci no Rio de Janeiro, mas ainda pequeno me mudei para São Gabriel da
+                            Cachoeira, no interior do Amazonas. Cresci ao lado da minha mãe, uma médica do exército que
+                            sempre foi uma grande inspiração para mim. Com ela, aprendi muito sobre resiliência e a
+                            importância de se adaptar aos desafios.</p>
+
+                        <p>Aos 7 anos, me mudei para Florianópolis, onde passei o restante da minha infância e
+                            adolescência. A transição do interior do Amazonas para as praias da ilha foi transformadora
+                            e
+                            cheia de novas oportunidades. Foi aqui que meu interesse por tecnologia começou a crescer.
+                            Hoje,
+                            Florianópolis é meu lar e o lugar onde transformei essa paixão em carreira.</p>
+
+                        <p>Agora, aos 23 anos, divido minha jornada com minha esposa Nicoli e nossa filha Coraline, que
+                            são
+                            minha fonte diária de inspiração. Cada projeto que crio reflete essa trajetória – uma
+                            combinação
+                            de eficiência, inovação e o desejo de conectar pessoas através da tecnologia. Para mim, a
+                            tecnologia é muito mais do que uma ferramenta; é uma extensão da criatividade humana, capaz
+                            de
+                            transformar o mundo ao nosso redor.</p>
+
+                        <p>Seja bem-vindo ao meu portfólio! Aqui você encontrará mais do que websites e aplicativos:
+                            cada
+                            projeto é uma parte da minha história, onde o passado e o presente se unem para criar o
+                            futuro
+                            digital.</p>
+                    </span>
+                    <!-- Botão Ler Mais -->
+                    <button class=" read-more-btn-about" onclick="toggleReadMore(this)">Ler Mais</button>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <img src="pessoal.jpg" alt="Imagem Sobre Mim" class="img-fluid about-img rounded shadow-sm lazy"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Qualificações -->
+    <section id="qualifications" class="section bg-qualifications fade-in">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 mb-5">
+                    <h2 class="title">Minhas Qualificações</h2>
+                    <p class="subtitle">Experiência em Desenvolvimento Web, Análise de Dados e Programação</p>
+                </div>
+
+                <!-- Web Development Card -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="qualification-card p-4 rounded text-center" style="min-height: 400px;">
+                        <h4>Desenvolvimento Web</h4>
+                        <p>Criação de sites modernos e responsivos</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-code"></i> React</li>
+                            <li><i class="fas fa-laptop-code"></i> Flask</li>
+                            <li><i class="fab fa-wordpress"></i> WordPress</li>
+                            <li><i class="fas fa-paint-brush"></i> CSS</li>
+                            <li><i class="fas fa-server"></i> Node.js</li>
+                            <li><i class="fas fa-mobile-alt"></i> Bootstrap</li>
+                            <li><i class="fas fa-cogs"></i> cPanel</li>
+                            <li><i class="fas fa-network-wired"></i> WHM</li>
+                        </ul>
+                        <a href="#dev_web" class="btn btn-outline-light mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Data Analysis and DB Card -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="qualification-card p-4 rounded text-center" style="min-height: 400px;">
+                        <h4>Análise de Dados e DB</h4>
+                        <p>Transformando dados em informações úteis para o seu negócio</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-database"></i> Pandas</li>
+                            <li><i class="fas fa-chart-line"></i> Dash</li>
+                            <li><i class="fas fa-cogs"></i> NumPy</li>
+                            <li><i class="fas fa-chart-bar"></i> Matplotlib</li>
+                            <li><i class="fab fa-docker"></i> Docker</li>
+                            <li><i class="fas fa-database"></i> PostgreSQL, MySQL, SQLite</li>
+                            <li><i class="fas fa-server"></i> MongoDB</li>
+                            <li><i class="fas fa-tools"></i> PHPMyAdmin</li>
+                        </ul>
+                        <a href="#data" class="btn btn-outline-light mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Programming and Web Scraping Card -->
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="qualification-card p-4 rounded text-center" style="min-height: 400px;">
+                        <h4>Programação e Web Scraping</h4>
+                        <p>Automatizando processos e coletando dados para tomar decisões estratégicas</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-code"></i> Python</li>
+                            <li><i class="fas fa-laptop-code"></i> JavaScript</li>
+                            <li><i class="fas fa-file-code"></i> PHP</li>
+                            <li><i class="fas fa-robot"></i> Selenium, Scrapy e BeautifulSoup</li>
+                            <li><i class="fab fa-git"></i> Git</li>
+                            <li><i class="fab fa-linux"></i> Linux</li>
+                            <li><i class="fas fa-network-wired"></i> API REST</li>
+                            <li><i class="fas fa-terminal"></i> Automação com Scripts</li>
+                        </ul>
+                        <a href="#ws" class="btn btn-outline-light mt-3">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="section bg-contact fade-in">
+        <div class="container">
+            <h2 class="title text-center">Portfólio</h2>
+            <p class="text-center">Aqui estão alguns dos projetos que trabalhei:</p>
+
+            <div class="row">
+                <div>
+                    <div class="contact-card p-4 rounded text-center">
+                        <a href="https://ecprojetos.com.br/" class="contact-link" target="_blank">
+                            <h4>Site Eagle Consulting</h4>
+                            <p>Desenvolvimento de um site em WordPress utilizando Elementor Pro </p>
+                        </a>
+                        <!-- Pré-visualização do site -->
+                        <iframe src="https://ecprojetos.com.br/" width="100%" height="400px" style="border:none;"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção Qualificações -->
+    <section id="qualificacoes" class="section bg-qualifications_2 bg-qualifications fade-in">
+        <div class="container">
+            <h2 class="title text-center">Minhas Qualificações em Detalhe</h2>
+
+            <!-- Qualificação 1 -->
+            <div id="dev_web" class="row mb-5">
+                <div class="col-md-12">
+                    <div class="qualification-card_2 qualification-car">
+                        <h4>Desenvolvimento Web</h4>
+                        <p>Minha jornada no desenvolvimento web começou de forma simples, com uma curiosidade genuína de
+                            entender como os sites funcionavam e a vontade de criar algo do zero. No início, me envolvi
+                            bastante com WordPress, o que foi essencial para aprender como gerenciar conteúdos e montar
+                            sites de forma rápida. A facilidade que o WordPress oferece, especialmente para quem está
+                            começando ou não tem experiência com programação, me marcou. Até hoje, utilizo essa
+                            plataforma
+                            em alguns projetos pela sua praticidade.</p>
+                        <span class="more-text" style="display: none;">
+                            <p>Com o tempo, meu interesse foi crescendo, e comecei a me aprofundar em ferramentas mais
+                                avançadas de frontend. Foi nessa fase que conheci o React e comecei a criar interfaces
+                                mais
+                                complexas. Aprendi a trabalhar com componentes reutilizáveis e a lidar com a
+                                complexidade
+                                crescente dos projetos, o que realmente me ajudou a dar um salto importante na minha
+                                trajetória.</p>
+
+                            <p>Ao longo do caminho, percebi que o desenvolvimento não se limitava ao que aparece na
+                                tela.
+                                Comecei a explorar o backend e a entender a importância da comunicação entre o frontend
+                                e o
+                                backend para o sucesso de um projeto. Aprender a criar APIs, estruturar servidores e
+                                lidar com
+                                bancos de dados foi fundamental para eu conseguir entregar soluções completas e
+                                funcionais,
+                                pensando sempre em como conectar a experiência do usuário com a lógica do sistema.</p>
+
+                            <p>Com o tempo, fui percebendo que o desenvolvimento web é muito mais do que apenas
+                                escrever
+                                código. É sobre criar soluções que realmente façam a diferença para as pessoas, entender
+                                as
+                                necessidades de quem vai usar o sistema e transformar ideias em algo prático e
+                                funcional. Essa
+                                visão mais ampla sobre o impacto do meu trabalho me ajudou a evoluir e a crescer como
+                                profissional.</p>
+
+                            <p>Hoje, olhando para trás, vejo o quanto aprendi, não só no lado técnico, mas também em
+                                como
+                                encaro o desenvolvimento como uma maneira de conectar pessoas e resolver problemas. Cada
+                                novo
+                                projeto que faço é uma oportunidade de inovar, criar e entregar algo que realmente tenha
+                                valor.
+                                Essa é a essência do que eu faço: construir soluções que vão além da tecnologia e focam
+                                na
+                                experiência e no impacto que elas causam</p>
+                        </span>
+                        <button class="btn btn-primary read-more-btn" onclick="toggleReadMore(this)">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qualificação 2 -->
+            <div id="data" class="row mb-5">
+                <div class="col-md-12">
+                    <div class="qualification-card_2 qualification-car">
+                        <h4>Analise de dadods e Bancos de Dados</h4>
+                        <p>Minha trajetória na análise de dados começou com a necessidade de entender como extrair
+                            insights
+                            úteis a partir de grandes volumes de informação. Ao longo do tempo, fui me aprofundando em
+                            ferramentas e técnicas que me permitiram estruturar, limpar e analisar dados de forma
+                            eficiente.
+                            Ferramentas como Pandas se tornaram parte do meu dia a dia, permitindo organizar e manipular
+                            dados de uma maneira mais prática.</p>
+                        <span class="more-text" style="display: none;">
+                            <p>Já trabalhei e continuo trabalhando com ferramentas como Dash para criar dashboards
+                                interativos
+                                que tornam os dados mais acessíveis, e também com PostgreSQL e MongoDB para gerenciar
+                                bancos de
+                                dados relacionais e não relacionais. Mesmo com um conhecimento intermediário, essas
+                                ferramentas
+                                me permitem realizar análises que geram insights importantes para os projetos em que
+                                estou
+                                envolvido.</p>
+
+                            <p>O que mais me motiva é ver o impacto direto que a análise de dados pode ter nas decisões
+                                estratégicas. A cada novo projeto, continuo evoluindo, aprimorando minhas habilidades e
+                                encontrando maneiras mais eficientes de lidar com dados, sempre em busca de crescimento
+                                contínuo.</p>
+                        </span>
+                        <button class="btn btn-primary read-more-btn" onclick="toggleReadMore(this)">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Qualificação 3 -->
+            <div id="ws" class="row mb-5">
+                <div class="col-md-12">
+                    <div class="qualification-card_2 qualification-car">
+                        <h4>Programação e Web Scraping</h4>
+                        <p>Minha experiência em programação e web scraping tem sido essencial para criar soluções que
+                            automatizam processos e coletam dados estratégicos de forma eficiente. Utilizando Python
+                            como
+                            base, implementei projetos que usam ferramentas como Selenium e Scrapy para automatizar
+                            tarefas
+                            repetitivas e realizar a coleta de dados de sites dinâmicos e estáticos.</p>
+                        <span class="more-text" style="display: none;">
+                            <p>Um dos principais projetos que participei envolveu a criação de um sistema automatizado
+                                de
+                                coleta e análise de licitações públicas para diversos empreendimentos. Nessa solução,
+                                integrei
+                                Selenium para interagir com portais governamentais, preenchendo formulários e extraindo
+                                dados em
+                                tempo real. Já com Scrapy, consegui construir spiders que coletam e processam grandes
+                                volumes de
+                                informações de forma rápida e eficiente.</p>
+
+                            <p>todos esses projetos, sigo as melhores práticas de programação e uso o versionamento de
+                                código com Git, garantindo escalabilidade e manutenção. Também aplico princípios éticos
+                                de
+                                scraping, respeitando as políticas de uso dos sites.</p>
+
+                            <p>automações economizam tempo e permitem que empresas tomem decisões estratégicas com base
+                                em dados atualizados e precisos, gerando insights valiosos de forma eficiente.</p>
+                        </span>
+                        <button class="btn btn-primary read-more-btn" onclick="toggleReadMore(this)">Ler Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="section bg-contact fade-in">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <h2 class="title">Entre em Contato</h2>
+                    <p class="subtitle">Sinta-se à vontade para me contatar por qualquer um dos meios abaixo</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 fade-in">
+                    <div class="contact-card p-4 rounded">
+                        <a href="mailto:jleonardofr@gmail.com" class="contact-link">
+                            <h4>Email</h4>
+                            <p>jleonardofr@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 fade-in">
+                    <div class="contact-card p-4 rounded">
+                        <a href="https://api.whatsapp.com/send?phone=5548996237831" target="_blank"
+                            class="contact-link">
+                            <h4>WhatsApp</h4>
+                            <p>(+55) 48 99623-7831</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 fade-in">
+                    <div class="contact-card p-4 rounded">
+                        <a href="https://www.linkedin.com/in/joao-leonardo-filgueiras-rodrigue" target="_blank"
+                            class="contact-link">
+                            <h4>LinkedIn</h4>
+                            <p>www.linkedin.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-center text-white fade-in">
+        <div class="container p-4">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/exemplo" target="_blank" class="text-white me-4">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5548996237831" target="_blank" class="text-white me-4">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+                <a href="mailto:exemplo@meuemail.com" class="text-white">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll-triggered animations and lazy loading -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.fade-in');
+            const lazyImages = document.querySelectorAll('.lazy');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Adiciona a animação de fade-in
+
+                        // Para imagens, adiciona lazy-loaded
+                        if (entry.target.tagName === 'IMG') {
+                            entry.target.classList.add('lazy-loaded');
+                        }
+
+                        observer.unobserve(entry.target); // Para de observar o elemento após animar
+                    }
+                });
+            }, {
+                threshold: 0.1 // Dispara a animação quando 10% do elemento está visível
+            });
+
+            sections.forEach(section => observer.observe(section));
+            lazyImages.forEach(image => observer.observe(image));
+        });
+    </script>
+    <script>
+        function toggleReadMore(btn) {
+            const moreText = btn.previousElementSibling;
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'block';  // Show the hidden content
+                btn.innerText = 'Ler Menos';      // Change button text to "Ler Menos"
+            } else {
+                moreText.style.display = 'none';  // Hide the content again
+                btn.innerText = 'Ler Mais';       // Revert button text to "Ler Mais"
+            }
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Evita o comportamento padrão do link
+                    const targetId = this.getAttribute('href'); // Obtém o ID do alvo do link
+                    const targetElement = document.querySelector(targetId); // Encontra o elemento alvo pelo ID
+
+                    // Verifica se o elemento alvo existe
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop, // Obtém a posição superior do elemento
+                            behavior: 'smooth' // Define o comportamento de scroll suave
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

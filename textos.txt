@@ -1,0 +1,91 @@
+#trajetoria
+
+Nasci no Rio de Janeiro, mas ainda pequeno me mudei para São Gabriel da
+                        Cachoeira, no interior do Amazonas. Cresci ao lado da minha mãe, uma médica do exército que
+                        sempre foi uma grande inspiração para mim. Com ela, aprendi muito sobre resiliência e a
+                        importância de se adaptar aos desafios.
+
+                        Aos 7 anos, me mudei para Florianópolis, onde passei o restante da minha infância e
+                        adolescência. A transição do interior do Amazonas para as praias da ilha foi transformadora e
+                        cheia de novas oportunidades. Foi aqui que meu interesse por tecnologia começou a crescer. Hoje,
+                        Florianópolis é meu lar e o lugar onde transformei essa paixão em carreira.
+
+                        Agora, aos 23 anos, divido minha jornada com minha esposa Nicoli e nossa filha Coraline, que são
+                        minha fonte diária de inspiração. Cada projeto que crio reflete essa trajetória – uma combinação
+                        de eficiência, inovação e o desejo de conectar pessoas através da tecnologia. Para mim, a
+                        tecnologia é muito mais do que uma ferramenta; é uma extensão da criatividade humana, capaz de
+                        transformar o mundo ao nosso redor.
+
+                        Seja bem-vindo ao meu portfólio! Aqui você encontrará mais do que websites e aplicativos: cada
+                        projeto é uma parte da minha história, onde o passado e o presente se unem para criar o futuro
+                        digital.
+
+#dev web
+Minha jornada no desenvolvimento web começou de forma simples, com uma curiosidade genuína de
+                        entender como os sites funcionavam e a vontade de criar algo do zero. No início, me envolvi
+                        bastante com WordPress, o que foi essencial para aprender como gerenciar conteúdos e montar
+                        sites de forma rápida. A facilidade que o WordPress oferece, especialmente para quem está
+                        começando ou não tem experiência com programação, me marcou. Até hoje, utilizo essa plataforma
+                        em alguns projetos pela sua praticidade.
+
+                        Com o tempo, meu interesse foi crescendo, e comecei a me aprofundar em ferramentas mais
+                        avançadas de frontend. Foi nessa fase que conheci o React e comecei a criar interfaces mais
+                        complexas. Aprendi a trabalhar com componentes reutilizáveis e a lidar com a complexidade
+                        crescente dos projetos, o que realmente me ajudou a dar um salto importante na minha trajetória.
+
+                        Ao longo do caminho, percebi que o desenvolvimento não se limitava ao que aparece na tela.
+                        Comecei a explorar o backend e a entender a importância da comunicação entre o frontend e o
+                        backend para o sucesso de um projeto. Aprender a criar APIs, estruturar servidores e lidar com
+                        bancos de dados foi fundamental para eu conseguir entregar soluções completas e funcionais,
+                        pensando sempre em como conectar a experiência do usuário com a lógica do sistema.
+
+                        Com o tempo, fui percebendo que o desenvolvimento web é muito mais do que apenas escrever
+                        código. É sobre criar soluções que realmente façam a diferença para as pessoas, entender as
+                        necessidades de quem vai usar o sistema e transformar ideias em algo prático e funcional. Essa
+                        visão mais ampla sobre o impacto do meu trabalho me ajudou a evoluir e a crescer como
+                        profissional.
+
+                        Hoje, olhando para trás, vejo o quanto aprendi, não só no lado técnico, mas também em como
+                        encaro o desenvolvimento como uma maneira de conectar pessoas e resolver problemas. Cada novo
+                        projeto que faço é uma oportunidade de inovar, criar e entregar algo que realmente tenha valor.
+                        Essa é a essência do que eu faço: construir soluções que vão além da tecnologia e focam na
+                        experiência e no impacto que elas causam
+
+#data
+
+Minha trajetória na análise de dados começou com a necessidade de entender como extrair insights
+                        úteis a partir de grandes volumes de informação. Ao longo do tempo, fui me aprofundando em
+                        ferramentas e técnicas que me permitiram estruturar, limpar e analisar dados de forma eficiente.
+                        Ferramentas como Pandas se tornaram parte do meu dia a dia, permitindo organizar e manipular
+                        dados de uma maneira mais prática.
+
+                        Já trabalhei e continuo trabalhando com ferramentas como Dash para criar dashboards interativos
+                        que tornam os dados mais acessíveis, e também com PostgreSQL e MongoDB para gerenciar bancos de
+                        dados relacionais e não relacionais. Mesmo com um conhecimento intermediário, essas ferramentas
+                        me permitem realizar análises que geram insights importantes para os projetos em que estou
+                        envolvido.
+
+                        O que mais me motiva é ver o impacto direto que a análise de dados pode ter nas decisões
+                        estratégicas. A cada novo projeto, continuo evoluindo, aprimorando minhas habilidades e
+                        encontrando maneiras mais eficientes de lidar com dados, sempre em busca de crescimento
+                        contínuo.
+
+#ws 
+
+Minha experiência em programação e web scraping tem sido essencial para criar soluções que
+                        automatizam processos e coletam dados estratégicos de forma eficiente. Utilizando Python como
+                        base, implementei projetos que usam ferramentas como Selenium e Scrapy para automatizar tarefas
+                        repetitivas e realizar a coleta de dados de sites dinâmicos e estáticos.
+
+                        Um dos principais projetos que participei envolveu a criação de um sistema automatizado de
+                        coleta e análise de licitações públicas para diversos empreendimentos. Nessa solução, integrei
+                        Selenium para interagir com portais governamentais, preenchendo formulários e extraindo dados em
+                        tempo real. Já com Scrapy, consegui construir spiders que coletam e processam grandes volumes de
+                        informações de forma rápida e eficiente.
+
+                        Em todos esses projetos, sigo as melhores práticas de programação e uso o versionamento de
+                        código com Git, garantindo escalabilidade e manutenção. Também aplico princípios éticos de
+                        scraping, respeitando as políticas de uso dos sites.
+
+                        Essas automações economizam tempo e permitem que empresas tomem decisões estratégicas com base
+                        em dados atualizados e precisos, gerando insights valiosos de forma eficiente.
